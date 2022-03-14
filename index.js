@@ -43,4 +43,4 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
-client.login(value)
+client.login(process.env.BOT_TOKEN)
