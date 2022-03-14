@@ -16,7 +16,7 @@ app.listen(3000);
 setInterval(() => {
   http.get(`https://hhhhas.herokuapp.com/`);
   console.log("refrsh")
-}, 060000);
+}, 60);
 /////////////////////////////
 client.config = config;
 client.queue = new Map();
