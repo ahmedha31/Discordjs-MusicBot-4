@@ -14,7 +14,7 @@ app.get("/", (request, response) => {
 });
 app.listen(3000);
 setInterval(() => {
-  http.get(`https://Discordjs-MusicBot-4.ahmedha31.repl.co`);
+  http.get(`https://hhhhas.herokuapp.com/`);
   console.log("refrsh")
 }, 060000);
 /////////////////////////////
