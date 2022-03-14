@@ -1,8 +1,6 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 require("dotenv").config();
-const Database = require("@replit/database")
-const db = new Database()
 const client = new Discord.Client();
 const config = {
   prefix: "4"
@@ -45,7 +43,4 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
-
-
-
-db.get("token").then(value => {client.login(value);});
+client.login(value)
