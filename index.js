@@ -6,17 +6,7 @@ const config = {
   prefix: "4"
 };
 //////////////////////////////
-const http = require('http');
-const express = require('express');
-const app = express();
-app.get("/", (request, response) => {
-  response.sendStatus(200);
-});
-app.listen(3000);
-setInterval(() => {
-  http.get(`https://hhhhas.herokuapp.com/`);
-  console.log("refrsh")
-}, 60);
+
 /////////////////////////////
 client.config = config;
 client.queue = new Map();
