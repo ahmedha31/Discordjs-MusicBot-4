@@ -9,7 +9,7 @@ const config = {
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
-  response.sendStatus(200);
+  response.send("ok")
 });
 app.listen(3000);
 /////////////////////////////
