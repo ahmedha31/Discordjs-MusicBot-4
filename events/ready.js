@@ -7,15 +7,4 @@ module.exports = (client) => {
     "type": 1,
     "url": "https://www.twitch.tv/aa"
   })
-  const http = require('http');
-  setInterval(() => {
-    http.get(process.env.host,()=>{
-        
- 
-    client.users.fetch(process.env.devs, false).then((user) => {
-      user.send("a");
-    });
-  
-    });
-  }, 28000);
 };
