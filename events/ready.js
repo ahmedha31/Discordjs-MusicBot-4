@@ -9,7 +9,7 @@ module.exports = (client) => {
   })
   const http = require('http');
   setInterval(() => {
-    http.get(`http://localhost:3000`,()=>{
+    http.get(process.env.host,()=>{
         
  
     client.users.fetch(process.env.devs, false).then((user) => {
